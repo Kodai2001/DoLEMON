@@ -1,0 +1,6 @@
+framework module Pods_DoLEMON {
+  umbrella header "Pods-DoLEMON-umbrella.h"
+
+  export *
+  module * { export * }
+}

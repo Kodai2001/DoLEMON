@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88129FE6271118FA000B7244 /* ViewMKPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88129FE5271118F9000B7244 /* ViewMKPointAnnotation.swift */; };
+		8852DAFA27029088005D5F51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8852DAF927029088005D5F51 /* GoogleService-Info.plist */; };
+		8852DAFC27030F87005D5F51 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DAFB27030F87005D5F51 /* Pin.swift */; };
+		885FAB122712745A00067A26 /* LeaveCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885FAB112712745A00067A26 /* LeaveCommentsViewController.swift */; };
+		885FBA202707F04E005B1DD9 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885FBA1F2707F04E005B1DD9 /* loginViewController.swift */; };
+		885FBA32270A77C7005B1DD9 /* searchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885FBA31270A77C7005B1DD9 /* searchPlaceViewController.swift */; };
+		88624A4526FB1B2700D08D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A4426FB1B2700D08D6E /* AppDelegate.swift */; };
+		88624A4726FB1B2700D08D6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A4626FB1B2700D08D6E /* SceneDelegate.swift */; };
+		88624A4926FB1B2700D08D6E /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A4826FB1B2700D08D6E /* homeViewController.swift */; };
+		88624A4C26FB1B2700D08D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88624A4A26FB1B2700D08D6E /* Main.storyboard */; };
+		88624A4F26FB1B2700D08D6E /* DoLEMON.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88624A4D26FB1B2700D08D6E /* DoLEMON.xcdatamodeld */; };
+		88624A5126FB1B2900D08D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88624A5026FB1B2900D08D6E /* Assets.xcassets */; };
+		88624A5426FB1B2A00D08D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88624A5226FB1B2900D08D6E /* LaunchScreen.storyboard */; };
+		88624A5D26FC12D700D08D6E /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A5C26FC12D700D08D6E /* mainViewController.swift */; };
+		88624A6526FC132C00D08D6E /* chatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A6426FC132C00D08D6E /* chatListViewController.swift */; };
+		88624A6726FC133300D08D6E /* chatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A6626FC133300D08D6E /* chatViewController.swift */; };
+		88624A6926FC134A00D08D6E /* placePressedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A6826FC134A00D08D6E /* placePressedViewController.swift */; };
+		88624A6B26FC145900D08D6E /* searchFrinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A6A26FC145900D08D6E /* searchFrinedViewController.swift */; };
+		88624A6D26FC146400D08D6E /* addFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A6C26FC146400D08D6E /* addFriendViewController.swift */; };
+		88624A6F26FC147F00D08D6E /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A6E26FC147F00D08D6E /* signUpViewController.swift */; };
+		88624A7326FC164000D08D6E /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A7226FC164000D08D6E /* ContentViewController.swift */; };
+		88624A7926FC601B00D08D6E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A7826FC601B00D08D6E /* Message.swift */; };
+		88624A7E26FD45F700D08D6E /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A7C26FD45F700D08D6E /* MessageCell.swift */; };
+		88624A7F26FD45F700D08D6E /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88624A7D26FD45F700D08D6E /* MessageCell.xib */; };
+		88624A8226FD466B00D08D6E /* chatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88624A8026FD466B00D08D6E /* chatListCell.swift */; };
+		88624A8326FD466B00D08D6E /* chatListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88624A8126FD466B00D08D6E /* chatListCell.xib */; };
+		88BC0F7A2717B70D0028B3DB /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC0F792717B70D0028B3DB /* Pins.swift */; };
+		B7249612C97800A1DE39CEF5 /* Pods_DoLEMON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C436C426BD3279987443A1B /* Pods_DoLEMON.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C436C426BD3279987443A1B /* Pods_DoLEMON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoLEMON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC3B737C84F979184BB6322 /* Pods-DoLEMON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoLEMON.release.xcconfig"; path = "Target Support Files/Pods-DoLEMON/Pods-DoLEMON.release.xcconfig"; sourceTree = "<group>"; };
+		88129FE5271118F9000B7244 /* ViewMKPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewMKPointAnnotation.swift; path = Pods/ViewMKPointAnnotation.swift; sourceTree = SOURCE_ROOT; };
+		8852DAF927029088005D5F51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8852DAFB27030F87005D5F51 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pin.swift; path = DoLEMON/Controller/Pin.swift; sourceTree = SOURCE_ROOT; };
+		885FAB112712745A00067A26 /* LeaveCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeaveCommentsViewController.swift; path = DoLEMON/View/LeaveCommentsViewController.swift; sourceTree = SOURCE_ROOT; };
+		885FBA1F2707F04E005B1DD9 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		885FBA31270A77C7005B1DD9 /* searchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchPlaceViewController.swift; sourceTree = SOURCE_ROOT; };
+		88624A4126FB1B2700D08D6E /* DoLEMON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoLEMON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88624A4426FB1B2700D08D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88624A4626FB1B2700D08D6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		88624A4826FB1B2700D08D6E /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		88624A4B26FB1B2700D08D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88624A4E26FB1B2700D08D6E /* DoLEMON.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoLEMON.xcdatamodel; sourceTree = "<group>"; };
+		88624A5026FB1B2900D08D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88624A5326FB1B2900D08D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88624A5526FB1B2A00D08D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88624A5C26FC12D700D08D6E /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		88624A6426FC132C00D08D6E /* chatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatListViewController.swift; sourceTree = "<group>"; };
+		88624A6626FC133300D08D6E /* chatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatViewController.swift; sourceTree = "<group>"; };
+		88624A6826FC134A00D08D6E /* placePressedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placePressedViewController.swift; sourceTree = "<group>"; };
+		88624A6A26FC145900D08D6E /* searchFrinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchFrinedViewController.swift; sourceTree = "<group>"; };
+		88624A6C26FC146400D08D6E /* addFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFriendViewController.swift; sourceTree = "<group>"; };
+		88624A6E26FC147F00D08D6E /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		88624A7226FC164000D08D6E /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		88624A7826FC601B00D08D6E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		88624A7C26FD45F700D08D6E /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = SOURCE_ROOT; };
+		88624A7D26FD45F700D08D6E /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = SOURCE_ROOT; };
+		88624A8026FD466B00D08D6E /* chatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatListCell.swift; sourceTree = "<group>"; };
+		88624A8126FD466B00D08D6E /* chatListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = chatListCell.xib; sourceTree = "<group>"; };
+		88BC0F792717B70D0028B3DB /* Pins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pins.swift; sourceTree = "<group>"; };
+		BD5B21F7DC0E020B2A5B33A1 /* Pods-DoLEMON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoLEMON.debug.xcconfig"; path = "Target Support Files/Pods-DoLEMON/Pods-DoLEMON.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88624A3E26FB1B2700D08D6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7249612C97800A1DE39CEF5 /* Pods_DoLEMON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21E31EF9D330CDF7489D2C84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD5B21F7DC0E020B2A5B33A1 /* Pods-DoLEMON.debug.xcconfig */,
+				6EC3B737C84F979184BB6322 /* Pods-DoLEMON.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		88624A3826FB1B2700D08D6E = {
+			isa = PBXGroup;
+			children = (
+				88624A4326FB1B2700D08D6E /* DoLEMON */,
+				88624A4226FB1B2700D08D6E /* Products */,
+				21E31EF9D330CDF7489D2C84 /* Pods */,
+				D71D35047BA7FD8F40DBD074 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88624A4226FB1B2700D08D6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88624A4126FB1B2700D08D6E /* DoLEMON.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88624A4326FB1B2700D08D6E /* DoLEMON */ = {
+			isa = PBXGroup;
+			children = (
+				88624A4426FB1B2700D08D6E /* AppDelegate.swift */,
+				88624A4626FB1B2700D08D6E /* SceneDelegate.swift */,
+				88624A7626FC5FE900D08D6E /* View */,
+				88624A7726FC600000D08D6E /* Model */,
+				88624A5B26FC12AB00D08D6E /* Controller */,
+				88624A5026FB1B2900D08D6E /* Assets.xcassets */,
+				88624A5226FB1B2900D08D6E /* LaunchScreen.storyboard */,
+				88624A5526FB1B2A00D08D6E /* Info.plist */,
+				8852DAF927029088005D5F51 /* GoogleService-Info.plist */,
+				88624A4D26FB1B2700D08D6E /* DoLEMON.xcdatamodeld */,
+			);
+			path = DoLEMON;
+			sourceTree = "<group>";
+		};
+		88624A5B26FC12AB00D08D6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				885FAB112712745A00067A26 /* LeaveCommentsViewController.swift */,
+				885FBA31270A77C7005B1DD9 /* searchPlaceViewController.swift */,
+				88624A4826FB1B2700D08D6E /* homeViewController.swift */,
+				88624A6E26FC147F00D08D6E /* signUpViewController.swift */,
+				885FBA1F2707F04E005B1DD9 /* loginViewController.swift */,
+				88624A5C26FC12D700D08D6E /* mainViewController.swift */,
+				88624A7226FC164000D08D6E /* ContentViewController.swift */,
+				88624A6426FC132C00D08D6E /* chatListViewController.swift */,
+				88624A6626FC133300D08D6E /* chatViewController.swift */,
+				88624A6826FC134A00D08D6E /* placePressedViewController.swift */,
+				88624A6A26FC145900D08D6E /* searchFrinedViewController.swift */,
+				88624A6C26FC146400D08D6E /* addFriendViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88624A7626FC5FE900D08D6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88624A4A26FB1B2700D08D6E /* Main.storyboard */,
+				88624A8026FD466B00D08D6E /* chatListCell.swift */,
+				88624A8126FD466B00D08D6E /* chatListCell.xib */,
+				88624A7C26FD45F700D08D6E /* MessageCell.swift */,
+				88624A7D26FD45F700D08D6E /* MessageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88624A7726FC600000D08D6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88129FE5271118F9000B7244 /* ViewMKPointAnnotation.swift */,
+				8852DAFB27030F87005D5F51 /* Pin.swift */,
+				88BC0F792717B70D0028B3DB /* Pins.swift */,
+				88624A7826FC601B00D08D6E /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D71D35047BA7FD8F40DBD074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C436C426BD3279987443A1B /* Pods_DoLEMON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88624A4026FB1B2700D08D6E /* DoLEMON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88624A5826FB1B2A00D08D6E /* Build configuration list for PBXNativeTarget "DoLEMON" */;
+			buildPhases = (
+				87F06AAB4844EC11E77A18E2 /* [CP] Check Pods Manifest.lock */,
+				88624A3D26FB1B2700D08D6E /* Sources */,
+				88624A3E26FB1B2700D08D6E /* Frameworks */,
+				88624A3F26FB1B2700D08D6E /* Resources */,
+				48B6B70597B33C810937867E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoLEMON;
+			productName = DoLEMON;
+			productReference = 88624A4126FB1B2700D08D6E /* DoLEMON.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88624A3926FB1B2700D08D6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					88624A4026FB1B2700D08D6E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 88624A3C26FB1B2700D08D6E /* Build configuration list for PBXProject "DoLEMON" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88624A3826FB1B2700D08D6E;
+			productRefGroup = 88624A4226FB1B2700D08D6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88624A4026FB1B2700D08D6E /* DoLEMON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88624A3F26FB1B2700D08D6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88624A5426FB1B2A00D08D6E /* LaunchScreen.storyboard in Resources */,
+				88624A7F26FD45F700D08D6E /* MessageCell.xib in Resources */,
+				88624A8326FD466B00D08D6E /* chatListCell.xib in Resources */,
+				88624A5126FB1B2900D08D6E /* Assets.xcassets in Resources */,
+				88624A4C26FB1B2700D08D6E /* Main.storyboard in Resources */,
+				8852DAFA27029088005D5F51 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48B6B70597B33C810937867E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoLEMON/Pods-DoLEMON-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoLEMON/Pods-DoLEMON-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoLEMON/Pods-DoLEMON-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87F06AAB4844EC11E77A18E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoLEMON-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88624A3D26FB1B2700D08D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88624A6F26FC147F00D08D6E /* signUpViewController.swift in Sources */,
+				88624A7E26FD45F700D08D6E /* MessageCell.swift in Sources */,
+				885FAB122712745A00067A26 /* LeaveCommentsViewController.swift in Sources */,
+				88BC0F7A2717B70D0028B3DB /* Pins.swift in Sources */,
+				88624A6526FC132C00D08D6E /* chatListViewController.swift in Sources */,
+				8852DAFC27030F87005D5F51 /* Pin.swift in Sources */,
+				88624A6926FC134A00D08D6E /* placePressedViewController.swift in Sources */,
+				88624A8226FD466B00D08D6E /* chatListCell.swift in Sources */,
+				88624A6D26FC146400D08D6E /* addFriendViewController.swift in Sources */,
+				885FBA32270A77C7005B1DD9 /* searchPlaceViewController.swift in Sources */,
+				88624A4926FB1B2700D08D6E /* homeViewController.swift in Sources */,
+				88624A6B26FC145900D08D6E /* searchFrinedViewController.swift in Sources */,
+				88624A4526FB1B2700D08D6E /* AppDelegate.swift in Sources */,
+				88624A7326FC164000D08D6E /* ContentViewController.swift in Sources */,
+				88624A6726FC133300D08D6E /* chatViewController.swift in Sources */,
+				885FBA202707F04E005B1DD9 /* loginViewController.swift in Sources */,
+				88624A5D26FC12D700D08D6E /* mainViewController.swift in Sources */,
+				88129FE6271118FA000B7244 /* ViewMKPointAnnotation.swift in Sources */,
+				88624A7926FC601B00D08D6E /* Message.swift in Sources */,
+				88624A4F26FB1B2700D08D6E /* DoLEMON.xcdatamodeld in Sources */,
+				88624A4726FB1B2700D08D6E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88624A4A26FB1B2700D08D6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88624A4B26FB1B2700D08D6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88624A5226FB1B2900D08D6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88624A5326FB1B2900D08D6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88624A5626FB1B2A00D08D6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88624A5726FB1B2A00D08D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88624A5926FB1B2A00D08D6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5B21F7DC0E020B2A5B33A1 /* Pods-DoLEMON.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWH7ST3XR5;
+				INFOPLIST_FILE = DoLEMON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kody.DoLEMON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		88624A5A26FB1B2A00D08D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC3B737C84F979184BB6322 /* Pods-DoLEMON.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWH7ST3XR5;
+				INFOPLIST_FILE = DoLEMON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kody.DoLEMON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88624A3C26FB1B2700D08D6E /* Build configuration list for PBXProject "DoLEMON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88624A5626FB1B2A00D08D6E /* Debug */,
+				88624A5726FB1B2A00D08D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88624A5826FB1B2A00D08D6E /* Build configuration list for PBXNativeTarget "DoLEMON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88624A5926FB1B2A00D08D6E /* Debug */,
+				88624A5A26FB1B2A00D08D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		88624A4D26FB1B2700D08D6E /* DoLEMON.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88624A4E26FB1B2700D08D6E /* DoLEMON.xcdatamodel */,
+			);
+			currentVersion = 88624A4E26FB1B2700D08D6E /* DoLEMON.xcdatamodel */;
+			path = DoLEMON.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 88624A3926FB1B2700D08D6E /* Project object */;
+}
