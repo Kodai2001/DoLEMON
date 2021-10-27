@@ -38,6 +38,9 @@ class mainViewController: UIViewController, UITextFieldDelegate, MKMapViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let mapView = mapView else {
+            return
+        }
         mapView.delegate = self
         
         //for hiding navigationBar

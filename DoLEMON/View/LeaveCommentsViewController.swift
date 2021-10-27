@@ -16,6 +16,17 @@ class LeaveCommentsViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var freeTextView: UITextView!
     
+    private let button: UIButton = {
+       let button = UIButton()
+        button.setTitle("+", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.5949525833, blue: 0.754537046, alpha: 1)
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 10.0
+         
+        return button
+    }()
+    
     var placeName: String!
     var address: String?
     
@@ -45,6 +56,13 @@ class LeaveCommentsViewController: UIViewController {
             name: UIResponder.keyboardWillHideNotification,
             object: nil)
     
+        // ボタン
+        view.addSubview(button)
+        button.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        button.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        button.layer.shadowOpacity = 1.0
+        button.layer.shadowRadius = 0.0
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
         //遷移先から
         userNameTextField.text = nameHolder
@@ -62,20 +80,45 @@ class LeaveCommentsViewController: UIViewController {
         //
         freeTextView.placeholder = " 　　ちょっとしたことを残しておこう😏"
         
+        
     }
     
-    @IBAction func addButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "toMainVC", sender: self)
+    @objc private func didTapButton() {
+        
+        //let mainVC = mainViewController()
+       
+        
+        // ①storyboardのインスタンス取得
+        let storyboard: UIStoryboard = self.storyboard!
+        
+        // ②遷移先ViewControllerのインスタンス取得
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! mainViewController
+        
+        mainVC.lonSearched = lonSearched
+        mainVC.latSearched = latSearched
+        mainVC.pinTitle = pinTitle
+        mainVC.userName = userNameTextField.text ?? "No name"
+        mainVC.textWrittenByUser = freeTextView.text
+        
+        // ③画面遷移
+        self.present(mainVC, animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let mainVC = segue.destination as? mainViewController
-        mainVC?.lonSearched = lonSearched
-        mainVC?.latSearched = latSearched
-        mainVC?.pinTitle = pinTitle
-        mainVC?.userName = userNameTextField.text ?? "No name"
-        mainVC?.textWrittenByUser = freeTextView.text
+    override func viewDidLayoutSubviews() {
+        button.frame = CGRect(x: view.frame.size.width-100,
+                              y: view.frame.size.height-100,
+                              width: 50,
+                              height: 50)
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let mainVC = mainViewController()
+//        mainVC.lonSearched = lonSearched
+//        mainVC.latSearched = latSearched
+//        mainVC.pinTitle = pinTitle
+//        mainVC.userName = userNameTextField.text ?? "No name"
+//        mainVC.textWrittenByUser = freeTextView.text
+//    }
     
     @objc func keyboardWillShow(notification: NSNotification) {
             if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {

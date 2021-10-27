@@ -382,7 +382,7 @@
             <objects>
                 <viewController id="7aS-AV-xdV" customClass="searchFrinedViewController" customModule="DoLEMON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ae9-uN-CmG">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rt-sK-ggk">
@@ -597,18 +597,6 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAr-Ek-TvJ">
-                                <rect key="frame" x="300" y="700" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="NNY-KQ-ZBe"/>
-                                    <constraint firstAttribute="height" constant="70" id="twu-v2-Eop"/>
-                                </constraints>
-                                <state key="normal" image="addButton"/>
-                                <connections>
-                                    <action selector="addButtonPressed:" destination="BXt-ff-yO4" eventType="touchUpInside" id="v14-m8-9M1"/>
-                                    <segue destination="sq9-kI-0g3" kind="show" identifier="toMainVC" id="iWp-mA-86u"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UmU-SG-U9k"/>
                         <color key="backgroundColor" red="0.6588235294" green="0.90588235289999997" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -617,8 +605,6 @@
                             <constraint firstItem="eW2-Pe-aux" firstAttribute="trailing" secondItem="UmU-SG-U9k" secondAttribute="trailing" id="Oq7-vK-xhx"/>
                             <constraint firstItem="eW2-Pe-aux" firstAttribute="top" secondItem="UmU-SG-U9k" secondAttribute="top" id="aeg-gp-XWa"/>
                             <constraint firstAttribute="bottom" secondItem="eW2-Pe-aux" secondAttribute="bottom" id="kL0-2g-pLZ"/>
-                            <constraint firstItem="FAr-Ek-TvJ" firstAttribute="leading" secondItem="UmU-SG-U9k" secondAttribute="leading" constant="300" id="kav-kN-jbb"/>
-                            <constraint firstItem="FAr-Ek-TvJ" firstAttribute="top" secondItem="UmU-SG-U9k" secondAttribute="top" constant="700" id="meh-J1-goT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hcO-dl-3ug"/>
@@ -653,7 +639,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iWp-mA-86u"/>
+        <segue reference="MdY-mZ-KxV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="4575058_earth_globe_internet_magnifier_search_icon" width="4096" height="4096"/>
