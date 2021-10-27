@@ -11,6 +11,8 @@ import FirebaseAuth
 class homeViewController: UIViewController {
     
     
+    
+    
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     

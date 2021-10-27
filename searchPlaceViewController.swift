@@ -11,7 +11,7 @@ import MapKit
 class searchPlaceViewController: UIViewController, UISearchBarDelegate, MKLocalSearchCompleterDelegate {
    
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var searchResultsTable: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     var lon: CLLocationDegrees = 0.0
     var lat: CLLocationDegrees = 0.0
@@ -38,8 +38,10 @@ class searchPlaceViewController: UIViewController, UISearchBarDelegate, MKLocalS
         //Set up the delgates & the dataSources of both the searchbar & searchResultsTableView
         searchCompleter.delegate = self
         searchBar?.delegate = self
-        searchResultsTable?.delegate = self
-        searchResultsTable?.dataSource = self
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        
+        tableView.keyboardDismissMode = .onDrag
         
         navigationController?.navigationBar.isHidden = true
     }
@@ -61,17 +63,22 @@ class searchPlaceViewController: UIViewController, UISearchBarDelegate, MKLocalS
         searchResults = completer.results
         
         // Reload the tableview with our new searchResults
-        searchResultsTable.reloadData()
+        tableView.reloadData()
     }
     
     // This method is called when there was an error with the searchCompleter
     func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
         // Error
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
 
 
 }
 
+//MARK: -  TabelView
 
 // Setting up extensions for the table view
 extension searchPlaceViewController: UITableViewDataSource {
@@ -101,6 +108,10 @@ extension searchPlaceViewController: UITableViewDataSource {
         
         
         return cell
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 

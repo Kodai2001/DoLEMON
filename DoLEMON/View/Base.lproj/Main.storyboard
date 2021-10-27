@@ -201,7 +201,7 @@
                     <navigationItem key="navigationItem" id="yEX-YA-RYC"/>
                     <connections>
                         <outlet property="searchBar" destination="oxZ-6Y-0p4" id="j5Q-i1-KUc"/>
-                        <outlet property="searchResultsTable" destination="zpJ-Xn-Egz" id="bXJ-Sn-UbI"/>
+                        <outlet property="tableView" destination="zpJ-Xn-Egz" id="bXJ-Sn-UbI"/>
                         <segue destination="BXt-ff-yO4" kind="presentation" identifier="toLeaveCommentsVC" id="w3b-oN-xZ6"/>
                     </connections>
                 </viewController>
@@ -226,7 +226,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="06a-Aq-CQW">
                                                 <rect key="frame" x="56" y="103.33333333333334" width="316" height="212.00000000000003"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s26-lj-plb">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s26-lj-plb">
                                                         <rect key="frame" x="0.0" y="0.0" width="316" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="316" id="fCm-BO-pGI"/>
@@ -238,7 +238,7 @@
                                                             <action selector="emailTextField:" destination="uwH-QQ-7dQ" eventType="editingDidEnd" id="3mc-9m-J1h"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GMb-c6-3sy">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GMb-c6-3sy">
                                                         <rect key="frame" x="0.0" y="88.999999999999972" width="316" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="1H4-vp-IN7"/>
@@ -250,7 +250,7 @@
                                                             <action selector="passwordTextField:" destination="uwH-QQ-7dQ" eventType="editingDidEnd" id="gqh-dD-cjo"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kodai" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vB-Ez-msd">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vB-Ez-msd">
                                                         <rect key="frame" x="0.0" y="177.99999999999997" width="316" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="316" id="ADe-9L-ppw"/>
@@ -324,7 +324,7 @@
         <!--Main View Controller-->
         <scene sceneID="XVu-Ap-phv">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="sq9-kI-0g3" customClass="mainViewController" customModule="DoLEMON" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" modalPresentationStyle="fullScreen" id="sq9-kI-0g3" customClass="mainViewController" customModule="DoLEMON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l1d-H8-Cyr">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -631,7 +631,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lvp-F3-huA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8046.728971962616" y="1323.7580993520519"/>
+            <point key="canvasLocation" x="7147" y="1295"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lyd-Wv-brm">

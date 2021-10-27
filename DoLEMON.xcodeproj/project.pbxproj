@@ -68,6 +68,7 @@
 		88624A7D26FD45F700D08D6E /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = SOURCE_ROOT; };
 		88624A8026FD466B00D08D6E /* chatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatListCell.swift; sourceTree = "<group>"; };
 		88624A8126FD466B00D08D6E /* chatListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = chatListCell.xib; sourceTree = "<group>"; };
+		8883487B2727EF9100C74FD6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		88BC0F792717B70D0028B3DB /* Pins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pins.swift; sourceTree = "<group>"; };
 		BD5B21F7DC0E020B2A5B33A1 /* Pods-DoLEMON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoLEMON.debug.xcconfig"; path = "Target Support Files/Pods-DoLEMON/Pods-DoLEMON.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				88624A4A26FB1B2700D08D6E /* Main.storyboard */,
+				8883487B2727EF9100C74FD6 /* MyPlayground.playground */,
 				88624A8026FD466B00D08D6E /* chatListCell.swift */,
 				88624A8126FD466B00D08D6E /* chatListCell.xib */,
 				88624A7C26FD45F700D08D6E /* MessageCell.swift */,
